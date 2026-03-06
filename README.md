@@ -161,6 +161,6 @@ Example outputs showing:
 
 ## 👨‍💻 Author
 
-**Sujal Shah**
+**Sujal Shaha**
 
 DevOps | Cloud | Kubernetes Enthusiast
