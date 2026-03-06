@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fargate-nginx
+  namespace: fargate-app  
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fargate-nginx
+  template:
+    metadata:
+      labels:
+        app: fargate-nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
+        ports:
+        - containerPort: 80
